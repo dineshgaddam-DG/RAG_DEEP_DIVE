@@ -46,8 +46,9 @@ This project demonstrates how to build a RAG system that:
 
 ## Usage
 
-Run the main script:
+Run the basic RAG example:
 ```bash
+cd rag/basic-rag
 python handson1.py
 ```
 
@@ -58,7 +59,7 @@ The script will:
 
 ### Customizing Queries
 
-Modify the query at the bottom of `handson1.py`:
+Modify the query at the bottom of `rag/basic-rag/handson1.py`:
 ```python
 print(answer_with_rag("Your question here"))
 ```
@@ -67,12 +68,16 @@ print(answer_with_rag("Your question here"))
 
 ```
 RAG-DeepDive/
-├── handson1.py          # Main RAG implementation
-├── overview.ipynb       # Jupyter notebook with examples
-├── .env                 # Environment variables (not in git)
-├── .gitignore          # Git ignore rules
-├── requirements.txt     # Python dependencies
-└── chroma/             # ChromaDB data directory (not in git)
+├── rag/
+│   └── basic-rag/
+│       ├── handson1.py      # Basic RAG implementation
+│       └── README.md        # Basic RAG documentation
+├── overview.ipynb           # Jupyter notebook with examples
+├── .env                     # Environment variables (not in git)
+├── .env.example             # Template for environment variables
+├── .gitignore              # Git ignore rules
+├── requirements.txt         # Python dependencies
+└── README.md               # This file
 ```
 
 ## How It Works
